@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://qknffg6ly60"]
+
+[ext_resource type="Script" path="res://Quit.gd" id="1_p2gfl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6qwk"]
+bg_color = Color(1, 0.294118, 0.294118, 1)
+
+[sub_resource type="Theme" id="Theme_6151j"]
+
+[node name="gameOverScreen" type="CanvasLayer"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j6qwk")
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="Rows" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "You Lose!"
+horizontal_alignment = 1
+
+[node name="Quit" type="Button" parent="PanelContainer/MarginContainer/Rows"]
+layout_mode = 2
+theme = SubResource("Theme_6151j")
+theme_override_font_sizes/font_size = 32
+text = "Quit
+"
+script = ExtResource("1_p2gfl")
+
+[connection signal="pressed" from="PanelContainer/MarginContainer/Rows/Quit" to="PanelContainer/MarginContainer/Rows/Quit" method="_on_pressed"]

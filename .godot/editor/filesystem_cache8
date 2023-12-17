@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1702774312
+game_over_screen.tscn::PackedScene::33660699968657631::1702774102::0::1::::<><>::res://Quit.gd
+level.gd::GDScript::-1::1702774029::0::1::::<>Node3D<>::
+level.tscn::PackedScene::292429784712870037::1702774102::0::1::::<><>::uid://c6br8h3si2ypg::::res://sphere.tscn<>res://level.gd
+multiplayer.gd::GDScript::-1::1676864908::0::1::::<>Node<>::
+multiplayer.tscn::PackedScene::3888575950508913889::1702774102::0::1::::<><>::res://multiplayer.gd
+player.gd::GDScript::-1::1702770805::0::1::::<>CharacterBody3D<>::
+player.tscn::PackedScene::6386511649374471819::1702774102::0::1::::<><>::res://player.gd<>res://player_input.gd
+player_input.gd::GDScript::-1::1676864954::0::1::::<>MultiplayerSynchronizer<>::
+Quit.gd::GDScript::-1::1702770280::0::1::::<>Button<>::
+sphere.gd::GDScript::-1::1702774151::0::1::::<>RigidBody3D<>::
+sphere.tscn::PackedScene::6951851429742749692::1702774151::0::1::::<><>::res://sphere.gd
+win_screen.tscn::PackedScene::6569107418340338833::1702774102::0::1::::<><>::res://Quit.gd

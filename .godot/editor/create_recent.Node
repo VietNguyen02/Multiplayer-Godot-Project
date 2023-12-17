@@ -1,0 +1,10 @@
+VBoxContainer
+Button
+Label
+MarginContainer
+HBoxContainer
+PanelContainer
+CanvasLayer
+MeshInstance3D
+CollisionShape3D
+StaticBody3D
